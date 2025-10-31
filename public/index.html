@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpsX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="https://i.imgur.com/sC26ntB.png" alt="OpsX Logo" class="logo-img">
+                <h1>OpsX</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Configurações</a></li>
+                    <li><a href="#"><i class="fas fa-shield-alt"></i> Segurança</a></li>
+                    <li><a href="#"><i class="fas fa-file-invoice-dollar"></i> Faturas</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile-bottom">
+                <img src="https://i.imgur.com/V3vH1kG.png" alt="User Avatar">
+                <span>John Doe</span>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header>
+                <div class="header-left">
+                </div>
+                <div class="header-right">
+                    <i class="fas fa-bell"></i>
+                    <img src="https://i.imgur.com/V3vH1kG.png" alt="User Avatar">
+                </div>
+            </header>
+            <section class="token-discord">
+                <h2>Token Discord</h2>
+                <div class="user-info">
+                    <img src="https://i.imgur.com/V3vH1kG.png" alt="User Avatar">
+                    <div class="user-details">
+                        <p>jhon@doe.com</p>
+                        <p>Discord ID: 1234567890</p>
+                        <p class="auth-status">Autenticado</p>
+                    </div>
+                </div>
+                <form id="tokenForm" style="margin-top: 20px;">
+                    <input type="text" id="discordId" placeholder="Discord ID" required style="display: block; width: 100%; padding: 10px; margin-bottom: 10px; background-color: #333; border: 1px solid #555; color: white; border-radius: 5px;">
+                    <input type="email" id="email" placeholder="Email" required style="display: block; width: 100%; padding: 10px; margin-bottom: 10px; background-color: #333; border: 1px solid #555; color: white; border-radius: 5px;">
+                    <input type="password" id="userToken" placeholder="Discord Token" required style="display: block; width: 100%; padding: 10px; margin-bottom: 10px; background-color: #333; border: 1px solid #555; color: white; border-radius: 5px;">
+                    <button type="submit" class="btn-discord">Registrar Token</button>
+                </form>
+            </section>
+            <section class="status-call">
+                <h2>Status da Call</h2>
+                <button class="btn-entrar">Entrar em Call</button>
+            </section>
+            <section class="help">
+                <h2>Precisa de ajuda?</h2>
+                <button class="btn-discord">Acessar Discord</button>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
