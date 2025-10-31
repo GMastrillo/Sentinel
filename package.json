@@ -1,17 +1,22 @@
 {
+  "name": "sentinel-system",
+  "version": "1.0.0",
+  "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "bot": "node src/bot/sentinel.js",
+    "bot": "node bot/sentinel.js",
     "dev": "concurrently \"npm run start\" \"npm run bot\""
   },
   "dependencies": {
-    "discord.js-selfbot-v13": "^1.9.1",
+    "discord.js": "^14.14.1",
     "discord-rpc": "^4.0.1",
     "express": "^4.18.2",
     "mysql2": "^3.6.5",
     "cors": "^2.8.5",
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.3.1",
+    "axios": "^1.6.2",
+    "socket.io": "^4.7.4",
     "concurrently": "^8.2.2"
   }
 }

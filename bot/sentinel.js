@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits } = require('discord.js-selfbot-v13');
+const { Client, GatewayIntentBits } = require('discord.js');
 const mysql = require('mysql2/promise');
 const discordRPC = require('discord-rpc');
 
