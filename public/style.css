@@ -176,3 +176,14 @@ section h2 {
 .btn-entrar:hover, .btn-discord:hover {
     background-color: var(--muted-red);
 }
+
+#tokenForm input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 5px;
+}

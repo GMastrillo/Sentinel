@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchUserData(discordId) {
     try {
-        const response = await fetch(`/api/user/${discordId}`);
+        const response = await fetch(`https://sentinel.discloud.app/api/user/${discordId}`);
         const data = await response.json();
 
         if (data.user) {
@@ -47,7 +47,7 @@ async function handleTokenSubmit(event) {
     const email = document.getElementById('email').value;
 
     try {
-        const response = await fetch('/api/auth/token', {
+        const response = await fetch('https://sentinel.discloud.app/api/auth/token', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -72,7 +72,7 @@ document.querySelector('.btn-entrar').addEventListener('click', async () => {
 
     if(discordId && guildId && channelId) {
         try {
-            const response = await fetch('/api/voice/join', {
+            const response = await fetch('https://sentinel.discloud.app/api/voice/join', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
